@@ -456,12 +456,12 @@ self.__precacheManifest = [
     "url": "/data/enter/0e8fcb054e4b904b7b9adbc7229923d0/epi.json"
   },
   {
-    "revision": "cedd1c65874aa76feb4f8d58f585f146",
-    "url": "/data/enter/112ed747bade535dbb4b8830d73c764d/epi.json"
-  },
-  {
     "revision": "83ba55a9c577bc307d64ffe86d8000ab",
     "url": "/data/enter/103a0985439a6f64e61429ef4b5464a4/epi.json"
+  },
+  {
+    "revision": "cedd1c65874aa76feb4f8d58f585f146",
+    "url": "/data/enter/112ed747bade535dbb4b8830d73c764d/epi.json"
   },
   {
     "revision": "0259c03a7b4bcf2e4d04685aa374bcf4",
@@ -1252,12 +1252,12 @@ self.__precacheManifest = [
     "url": "/data/enter/ce18fa7825507d5df06f33092e651b2c/epi.json"
   },
   {
-    "revision": "f7c95716167887658019e0268e4fc467",
-    "url": "/data/enter/cfa76524c55dbc7a7499990e61c83a68/epi.json"
-  },
-  {
     "revision": "9bb97563f553f2e0eb4c841421576bf3",
     "url": "/data/enter/d122e7b806f81c034b10522851f97500/epi.json"
+  },
+  {
+    "revision": "f7c95716167887658019e0268e4fc467",
+    "url": "/data/enter/cfa76524c55dbc7a7499990e61c83a68/epi.json"
   },
   {
     "revision": "77f6ce2de585c424c8b921a84d3d4fb8",
