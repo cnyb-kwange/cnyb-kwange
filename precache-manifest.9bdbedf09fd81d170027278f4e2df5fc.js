@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/data/movie/f59d8dc6b5fe9ace5af2d9495fcabffe/item.json"
   },
   {
-    "revision": "2c47ba7098af9b308613",
+    "revision": "a6bac9d964961d730770",
     "url": "/css/app.e780ad32.css"
   },
   {
@@ -24,28 +24,28 @@ self.__precacheManifest = [
     "url": "/js/cn.c8c1edc4.js"
   },
   {
-    "revision": "4456d93edbf534e89caf",
+    "revision": "9656ed81de0c2fed29bf",
     "url": "/css/drama.77489406.css"
   },
   {
-    "revision": "4456d93edbf534e89caf",
-    "url": "/js/drama.3bb213b3.js"
+    "revision": "9656ed81de0c2fed29bf",
+    "url": "/js/drama.5590047d.js"
   },
   {
-    "revision": "274134791a1c75e734ac",
-    "url": "/js/drama.actor.288543b6.js"
+    "revision": "24154a5ad78b951e2248",
+    "url": "/js/drama.actor.547fef42.js"
   },
   {
-    "revision": "24ea13d2697a75cfc534",
+    "revision": "487fc8d911d880b10dc3",
     "url": "/css/enter.77489406.css"
   },
   {
-    "revision": "24ea13d2697a75cfc534",
-    "url": "/js/enter.43fbac2f.js"
+    "revision": "487fc8d911d880b10dc3",
+    "url": "/js/enter.426d3b26.js"
   },
   {
-    "revision": "eeb7a70e55d87f6e6c7a",
-    "url": "/js/enter.actor.54b95500.js"
+    "revision": "4e591c16430f1f26c25b",
+    "url": "/js/enter.actor.f76a33aa.js"
   },
   {
     "revision": "243e0fa0be86d90ed670",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/js/ua.42612023.js"
   },
   {
-    "revision": "0ab21a7a048a2e4894db0f8f64d27bd3",
+    "revision": "6e889289c62c35d9b78b41fbe2ec39e4",
     "url": "/index.html"
   },
   {
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/data/drama/58b7d08ab0f92cc32566ca0e34276dd6/epi.json"
   },
   {
-    "revision": "3559ab37d0b9c8cc0292445efc14510e",
+    "revision": "94fdfe1e458988ffff617b9d260c1377",
     "url": "/data/drama/5963d40cb2d53ea0a6e7cf8891b64202/epi.json"
   },
   {
@@ -324,7 +324,7 @@ self.__precacheManifest = [
     "url": "/data/drama/c48c2c44aee1edb3e6731635d10dc978/epi.json"
   },
   {
-    "revision": "d16231eb33f11e1fdb247ce77e5c8901",
+    "revision": "e0c7414f6d1b7f46771a91c7237ae8a4",
     "url": "/data/drama/c9d74df7e407267660a625fed81fa5c3/epi.json"
   },
   {
@@ -476,16 +476,20 @@ self.__precacheManifest = [
     "url": "/data/enter/0b587ae0058fbc59bcb5779ab78bae3e/epi.json"
   },
   {
+    "revision": "37877a9f6183d7145a456d315bc0db63",
+    "url": "/data/enter/0c166a684e1d66e516fcc819bc4b14a7/epi.json"
+  },
+  {
     "revision": "55c7752dd3639022bbcf030c9d787bde",
     "url": "/data/enter/0c690a88a0d267c063e979a15b4874c5/epi.json"
   },
   {
-    "revision": "3632cbff0bd1da03ac60d9521dba8e44",
-    "url": "/data/enter/0d8ac31c8927d3dc2497ac60d663aa40/epi.json"
-  },
-  {
     "revision": "5b8d24268469a811a032ded61b32d98d",
     "url": "/data/enter/0d85102fd6cd5218890518ecfd7a40ce/epi.json"
+  },
+  {
+    "revision": "3632cbff0bd1da03ac60d9521dba8e44",
+    "url": "/data/enter/0d8ac31c8927d3dc2497ac60d663aa40/epi.json"
   },
   {
     "revision": "3e6622f0486c3aa6a75d027b565cdf97",
@@ -496,12 +500,12 @@ self.__precacheManifest = [
     "url": "/data/enter/0e8fcb054e4b904b7b9adbc7229923d0/epi.json"
   },
   {
-    "revision": "70938f20e7f09df8a960dd62c759b41d",
-    "url": "/data/enter/112ed747bade535dbb4b8830d73c764d/epi.json"
-  },
-  {
     "revision": "c2d578b2d0776b042d84c58abaec79b8",
     "url": "/data/enter/103a0985439a6f64e61429ef4b5464a4/epi.json"
+  },
+  {
+    "revision": "70938f20e7f09df8a960dd62c759b41d",
+    "url": "/data/enter/112ed747bade535dbb4b8830d73c764d/epi.json"
   },
   {
     "revision": "aeced0c40ea8dae20f9df4d5ff8282a2",
@@ -572,7 +576,7 @@ self.__precacheManifest = [
     "url": "/data/enter/25c43b84ce2009e02b58a196432620da/epi.json"
   },
   {
-    "revision": "2fce523cd5e6dcb37f0d2efa98de7586",
+    "revision": "16b8849f6bdbec90e9b7b6dc16e15216",
     "url": "/data/enter/26d3e874da161f81ec052b9d2670faeb/epi.json"
   },
   {
@@ -648,12 +652,12 @@ self.__precacheManifest = [
     "url": "/data/enter/3514ef2482cee9871a1b6c63b81e83a3/epi.json"
   },
   {
-    "revision": "829e58a388ee36d2bda5880ea4269c0b",
-    "url": "/data/enter/3c158364ce8a72ffabbb4c6bb5645d87/epi.json"
-  },
-  {
     "revision": "cebee3844a8d9dcfa2fdce12fef46ae1",
     "url": "/data/enter/367b96343e531110e4e28980c9d82b3f/epi.json"
+  },
+  {
+    "revision": "829e58a388ee36d2bda5880ea4269c0b",
+    "url": "/data/enter/3c158364ce8a72ffabbb4c6bb5645d87/epi.json"
   },
   {
     "revision": "b0e690ff184a56feaf7e851754260a80",
@@ -800,16 +804,16 @@ self.__precacheManifest = [
     "url": "/data/enter/5725d90728f31a7b92a9d9fa86b0cb9f/epi.json"
   },
   {
-    "revision": "2b675996fe3f52bbe716e8dcc9b3a321",
-    "url": "/data/enter/5b8cca822651821fb9bca30e476abbbc/epi.json"
+    "revision": "631b02d101e936da02ae6c04a3c6d88f",
+    "url": "/data/enter/5751e8db75ad131e2ce2626512fc683e/epi.json"
   },
   {
     "revision": "c4d11f7043faac64e31dc5cd3c532eec",
     "url": "/data/enter/5b27b8ceda7f016c1f990dcb1f265a2a/epi.json"
   },
   {
-    "revision": "631b02d101e936da02ae6c04a3c6d88f",
-    "url": "/data/enter/5751e8db75ad131e2ce2626512fc683e/epi.json"
+    "revision": "2b675996fe3f52bbe716e8dcc9b3a321",
+    "url": "/data/enter/5b8cca822651821fb9bca30e476abbbc/epi.json"
   },
   {
     "revision": "d65da6bb45e204a6b187751989e55feb",
@@ -850,10 +854,6 @@ self.__precacheManifest = [
   {
     "revision": "5ff10eec5e42e3c1da975d9379fd21a8",
     "url": "/data/enter/63066f6b4e10f73eee14a7cf084a04da/epi.json"
-  },
-  {
-    "revision": "37877a9f6183d7145a456d315bc0db63",
-    "url": "/data/enter/0c166a684e1d66e516fcc819bc4b14a7/epi.json"
   },
   {
     "revision": "4f357d56ab78122e61b839e4456a8bfd",
@@ -1084,7 +1084,7 @@ self.__precacheManifest = [
     "url": "/data/enter/9f59ef9a12550ce8f33a65a8b0262e64/epi.json"
   },
   {
-    "revision": "bd15087d233a5f82f0bdb5c4448183f8",
+    "revision": "1c1ea66c5e8bf8af87fb00b78537d053",
     "url": "/data/enter/a1bca549e295e3030285e66500d9fccc/epi.json"
   },
   {
@@ -2928,16 +2928,16 @@ self.__precacheManifest = [
     "url": "/data/movie/1f2dcdae2d11043b1e5d8fead5c72405/item.json"
   },
   {
-    "revision": "ba58b01a4af9aeadbdb44024da73bc70",
-    "url": "/data/movie/1f3fe98716d94e07faced03e0a050f89/item.json"
-  },
-  {
     "revision": "9abcdfba66061189434b86ecebcdf292",
     "url": "/data/movie/1f890427a60b1b054d3b7d9278b44ddd/item.json"
   },
   {
     "revision": "6e6044c81041d42a4c79cc48e4101c21",
     "url": "/data/movie/1f8e52ffeb5d48b4fc5d16b55a6025c8/item.json"
+  },
+  {
+    "revision": "ba58b01a4af9aeadbdb44024da73bc70",
+    "url": "/data/movie/1f3fe98716d94e07faced03e0a050f89/item.json"
   },
   {
     "revision": "f607d653dcca9125de0e16a7017c2962",
@@ -3580,16 +3580,16 @@ self.__precacheManifest = [
     "url": "/data/movie/2da945fbe0ed369d56d4119acbc1dfd6/item.json"
   },
   {
-    "revision": "44d20029e59942efd12dc06c7c06cec6",
-    "url": "/data/movie/2dd6dc1d6dd2707e4d1c4d2a2891dc4d/item.json"
-  },
-  {
     "revision": "51e430ab8acfffc999451d50f3c6e7e5",
     "url": "/data/movie/2dd86c45b2c49781671d17431719d07a/item.json"
   },
   {
     "revision": "73cab085d88ba2b0529f7df77934352c",
     "url": "/data/movie/2de0dc8263d45be814ecaa8f1b04d64c/item.json"
+  },
+  {
+    "revision": "44d20029e59942efd12dc06c7c06cec6",
+    "url": "/data/movie/2dd6dc1d6dd2707e4d1c4d2a2891dc4d/item.json"
   },
   {
     "revision": "908fba419a1be5250cf0cf35f43971e9",
@@ -11252,16 +11252,16 @@ self.__precacheManifest = [
     "url": "/data/movie/cn-43.json"
   },
   {
-    "revision": "f7304fa7530012b00fe1592c4a838534",
-    "url": "/data/movie/cn-5.json"
-  },
-  {
     "revision": "8a540c03f77da392e59c110c49559c65",
     "url": "/data/movie/cn-6.json"
   },
   {
     "revision": "0af0d0645521b84fd10122b66f5e2af9",
     "url": "/data/movie/cn-7.json"
+  },
+  {
+    "revision": "f7304fa7530012b00fe1592c4a838534",
+    "url": "/data/movie/cn-5.json"
   },
   {
     "revision": "ef56c50b78c278ef70a3d717ed91f9b2",
@@ -12792,8 +12792,8 @@ self.__precacheManifest = [
     "url": "/data/movie/f5937b23422e08360b4ddaa9dba34af5/item.json"
   },
   {
-    "revision": "2c47ba7098af9b308613",
-    "url": "/js/app.8722b144.js"
+    "revision": "a6bac9d964961d730770",
+    "url": "/js/app.9582f4c1.js"
   },
   {
     "revision": "7a20cda1ab3c2b460f841db3570f3517",
