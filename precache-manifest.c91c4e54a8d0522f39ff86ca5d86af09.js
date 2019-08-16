@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/data/movie/e5bfb7a26ffcad0a81c5b9d5483c4b47/item.json"
   },
   {
-    "revision": "7c4cd40d36f7bd3c4373",
+    "revision": "cc427b34ee7774dadaea",
     "url": "/css/app.e780ad32.css"
   },
   {
@@ -24,28 +24,28 @@ self.__precacheManifest = [
     "url": "/js/cn.63510f86.js"
   },
   {
-    "revision": "ad2d419df757096f41d2",
+    "revision": "e1fb98bc62c673cce4a9",
     "url": "/css/drama.77489406.css"
   },
   {
-    "revision": "ad2d419df757096f41d2",
-    "url": "/js/drama.c18289ed.js"
+    "revision": "e1fb98bc62c673cce4a9",
+    "url": "/js/drama.5bb9187f.js"
   },
   {
-    "revision": "8244f4cef4c35aa63f4c",
-    "url": "/js/drama.actor.92865234.js"
+    "revision": "3e863e2f51e909c35f67",
+    "url": "/js/drama.actor.dd1c659a.js"
   },
   {
-    "revision": "516927ae19eeb5418699",
+    "revision": "52cfdf517b2225074c4f",
     "url": "/css/enter.77489406.css"
   },
   {
-    "revision": "516927ae19eeb5418699",
-    "url": "/js/enter.5ec129a1.js"
+    "revision": "52cfdf517b2225074c4f",
+    "url": "/js/enter.bfb78c5a.js"
   },
   {
-    "revision": "b5fe2bba36b8d4e1a7ed",
-    "url": "/js/enter.actor.81aabd1b.js"
+    "revision": "badd3c73661473ebb20e",
+    "url": "/js/enter.actor.aef8d3e7.js"
   },
   {
     "revision": "d9f2ab6b2de479dfa186",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/js/ua.157973d1.js"
   },
   {
-    "revision": "272d4a4f4d951afd0a75ab3f06493576",
+    "revision": "d88d5af4235ab20b64c6f96f00e632c8",
     "url": "/index.html"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/data/drama/073d74824729108cff2217e386d71a81/epi.json"
   },
   {
-    "revision": "2370f50eb1e1c827ff08d9478c74c1cf",
+    "revision": "425c8344d454700d4a8c4f3416cae464",
     "url": "/data/drama/0d2b4800f4b59d9a77972ef5c6ea5f53/epi.json"
   },
   {
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "/data/drama/44503d8d2ed1d3a342a5be78a6f01e51/epi.json"
   },
   {
-    "revision": "66c6ff357d35033545a5de65a7de41de",
+    "revision": "d6ea7c5190443950332fb4432b28a2b8",
     "url": "/data/drama/4cb726035e8a3339ab58e6f7d55d99d1/epi.json"
   },
   {
@@ -11996,8 +11996,8 @@ self.__precacheManifest = [
     "url": "/data/movie/e5b84f09205619137c729a000052bdc2/item.json"
   },
   {
-    "revision": "7c4cd40d36f7bd3c4373",
-    "url": "/js/app.c2e47fe0.js"
+    "revision": "cc427b34ee7774dadaea",
+    "url": "/js/app.95ad5401.js"
   },
   {
     "revision": "c860f7657ddec3fe15618c061ff63c0f",
