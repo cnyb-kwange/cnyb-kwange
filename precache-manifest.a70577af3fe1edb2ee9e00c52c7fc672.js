@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/vendor/statistic.js"
   },
   {
-    "revision": "5b052b3654ef3ad9c2bf",
-    "url": "/js/app.a4ab176a.js"
+    "revision": "a117c5790bae812951aa",
+    "url": "/js/app.8307bebd.js"
   },
   {
     "revision": "ba674ffc9f9a987fd5ab",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/vendor/html5shiv.min.js"
   },
   {
-    "revision": "7e9801aeb4a653d4e22a",
-    "url": "/js/drama.282e44db.js"
+    "revision": "c8d09a7e67edf4f92c68",
+    "url": "/js/drama.de90473c.js"
   },
   {
     "revision": "27cc0be80da44abb533a64bf388d0378",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/js/about.82a3a04a.js"
   },
   {
-    "revision": "63369b59173db468d168",
-    "url": "/js/movie.9f46c646.js"
+    "revision": "9af2e3f275712b86632d",
+    "url": "/js/movie.acdbcadf.js"
   },
   {
     "revision": "8c47219bb7caae6b8eaf",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/js/ua.781becf1.js"
   },
   {
-    "revision": "0ad5e5fceb672a10990391627b86c03b",
+    "revision": "24065c5c95baa7320161573136bbb59d",
     "url": "/index.html"
   },
   {
@@ -452,7 +452,7 @@ self.__precacheManifest = [
     "url": "/data/drama/fa0959ed0dcb2cdeec2e75c966c1670a/epi.json"
   },
   {
-    "revision": "68bf51c169159eb9f6dccba766c64441",
+    "revision": "d1bc60b72cbc26fd1f22cbc373f479f6",
     "url": "/data/@hot/hot-drama.json"
   },
   {
@@ -460,7 +460,7 @@ self.__precacheManifest = [
     "url": "/data/drama/fd1ab97f0a9c799cc5f71d509777f94e/epi.json"
   },
   {
-    "revision": "78ed24f744e66894dcd4046be55ad305",
+    "revision": "cff5538d1006c3efdb2f298f990cf092",
     "url": "/data/@hot/hot-enter.json"
   },
   {
@@ -1216,16 +1216,16 @@ self.__precacheManifest = [
     "url": "/data/enter/9ca2b3ebe133d4ab7dde904b10d7c012/epi.json"
   },
   {
-    "revision": "99e2df4037ca4c881d8159c9a4ff55b2",
-    "url": "/data/enter/9cc4a02765a429eb58cceb65be08d89a/epi.json"
-  },
-  {
     "revision": "b1918d4aee042b02cab79b297aa480d9",
     "url": "/data/enter/9ea032cbc98b0e3363da2604108a382b/epi.json"
   },
   {
     "revision": "2296554adfa85e01df2ae1cf69114913",
     "url": "/data/enter/9f59ef9a12550ce8f33a65a8b0262e64/epi.json"
+  },
+  {
+    "revision": "99e2df4037ca4c881d8159c9a4ff55b2",
+    "url": "/data/enter/9cc4a02765a429eb58cceb65be08d89a/epi.json"
   },
   {
     "revision": "42d2bdd9511f7630bdc838e8262fb11e",
@@ -4772,6 +4772,10 @@ self.__precacheManifest = [
     "url": "/data/movie/374559a402d1303cce075ef3cb15a252/item.json"
   },
   {
+    "revision": "1b07eecd975797f53c9a83c1031b7266",
+    "url": "/data/@actor/actor-drama.json"
+  },
+  {
     "revision": "52ed4e22651eadcea8fea9daaed43fb3",
     "url": "/data/movie/3745d74e20ddfb2b0428ab0f2f5ad46c/item.json"
   },
@@ -4802,10 +4806,6 @@ self.__precacheManifest = [
   {
     "revision": "80d98857458b21d5cb17f5d0fe71432a",
     "url": "/data/movie/379259021142c8eaf81f8eab606654c4/item.json"
-  },
-  {
-    "revision": "7b1429505fb7ce9c13b3da530ee08b6a",
-    "url": "/data/@actor/actor-drama.json"
   },
   {
     "revision": "3f70ac8fc7cb7afa931d90a92a283586",
@@ -7296,12 +7296,12 @@ self.__precacheManifest = [
     "url": "/data/movie/66fffa6b47fdeb74c0fec03023ab2f99/item.json"
   },
   {
-    "revision": "0813d096820c10af483010ddbf47abc3",
-    "url": "/data/movie/670292ce6863022c8ab8921f96d63c3a/item.json"
-  },
-  {
     "revision": "3b62b5aeee73f9475c56cd1a0dc3abbe",
     "url": "/data/movie/671e5081fc5e349da64c8953566c5678/item.json"
+  },
+  {
+    "revision": "0813d096820c10af483010ddbf47abc3",
+    "url": "/data/movie/670292ce6863022c8ab8921f96d63c3a/item.json"
   },
   {
     "revision": "f19403d90009e7eb0ca000bf53f265e6",
@@ -9524,12 +9524,12 @@ self.__precacheManifest = [
     "url": "/data/movie/8ec5002f6f33238432dea3266dfd0955/item.json"
   },
   {
-    "revision": "d549cf5d9366493ca3cbb130a945a442",
-    "url": "/data/movie/8ed74259647d101c9fe34c7af7c4d620/item.json"
-  },
-  {
     "revision": "7e4947a18e3ce1e9bf0ce978fa584f31",
     "url": "/data/movie/8ece49cc132b8463a899ead968b27b82/item.json"
+  },
+  {
+    "revision": "d549cf5d9366493ca3cbb130a945a442",
+    "url": "/data/movie/8ed74259647d101c9fe34c7af7c4d620/item.json"
   },
   {
     "revision": "c87cd37be9575f6daf7e073c15ea24bb",
@@ -9840,12 +9840,12 @@ self.__precacheManifest = [
     "url": "/data/movie/9418cadf519a00ec7a6127b9d93444a0/item.json"
   },
   {
-    "revision": "fe3eaa6cc62555c5e3915ca74d2ca516",
-    "url": "/data/movie/943fb83a2ad431435ba2b5424d19c90c/item.json"
-  },
-  {
     "revision": "992be5282a1a79118d308e6e8418fad3",
     "url": "/data/movie/9445da987af4773b58d91e640dd88809/item.json"
+  },
+  {
+    "revision": "fe3eaa6cc62555c5e3915ca74d2ca516",
+    "url": "/data/movie/943fb83a2ad431435ba2b5424d19c90c/item.json"
   },
   {
     "revision": "8f3b8456b825450c70e4e418b4485b33",
@@ -11000,12 +11000,12 @@ self.__precacheManifest = [
     "url": "/data/movie/a982d9517adc9778b1a45a8ae4a46e92/item.json"
   },
   {
-    "revision": "f67e06e42faca26fb938eb9e7d29ec1c",
-    "url": "/data/movie/a9872a9f3e300c214708005a89a43c8b/item.json"
-  },
-  {
     "revision": "3f41a054aa1326cf66fd4ff88cc46fed",
     "url": "/data/movie/a99f9d7f333b70194a852bbf7bec2e93/item.json"
+  },
+  {
+    "revision": "f67e06e42faca26fb938eb9e7d29ec1c",
+    "url": "/data/movie/a9872a9f3e300c214708005a89a43c8b/item.json"
   },
   {
     "revision": "2730f4148464c4af6edef62deb725835",
@@ -11236,12 +11236,12 @@ self.__precacheManifest = [
     "url": "/data/movie/ae5cd8edf3a0fe6b5fd507ebf2877a8b/item.json"
   },
   {
-    "revision": "bb5538fb67f4d726a1143eb43466e86d",
-    "url": "/data/movie/aea6ecd596355f7ab0f7960bf475311f/item.json"
-  },
-  {
     "revision": "64282990d63171d34549ce1d88fa32bf",
     "url": "/data/movie/ae6d42be897f22e4b504e9810e7ca139/item.json"
+  },
+  {
+    "revision": "bb5538fb67f4d726a1143eb43466e86d",
+    "url": "/data/movie/aea6ecd596355f7ab0f7960bf475311f/item.json"
   },
   {
     "revision": "e366012d235e6d483ac800931c3804d9",
@@ -11640,12 +11640,12 @@ self.__precacheManifest = [
     "url": "/data/movie/b63107bf22cdefc8728565cc0709fbf9/item.json"
   },
   {
-    "revision": "d48d72e88cb7ff451d16eb81e258fa3f",
-    "url": "/data/movie/b64c798372a833ca82185c40e423e088/item.json"
-  },
-  {
     "revision": "9e976eb19744ff2ddbe42fc4d44b19b0",
     "url": "/data/movie/b63afa2832f184c88c02a29cdf660389/item.json"
+  },
+  {
+    "revision": "d48d72e88cb7ff451d16eb81e258fa3f",
+    "url": "/data/movie/b64c798372a833ca82185c40e423e088/item.json"
   },
   {
     "revision": "817eaaa00f8ea2edb76f7167559cf3ca",
@@ -12336,12 +12336,12 @@ self.__precacheManifest = [
     "url": "/data/movie/c2faaaaa61122d890f56868958820452/item.json"
   },
   {
-    "revision": "5c10dd9e5584f24aa2bc324124bc6a38",
-    "url": "/data/movie/c3403558a781df1209bf406f897053e5/item.json"
-  },
-  {
     "revision": "3ca2401f96af648c758284eb40ce19ff",
     "url": "/data/movie/c33a48709a29b2df4cbca3f59369e91c/item.json"
+  },
+  {
+    "revision": "5c10dd9e5584f24aa2bc324124bc6a38",
+    "url": "/data/movie/c3403558a781df1209bf406f897053e5/item.json"
   },
   {
     "revision": "9ae17dbe75fc3906e5f64bb2901d3846",
@@ -13368,12 +13368,12 @@ self.__precacheManifest = [
     "url": "/data/movie/cn-26.json"
   },
   {
-    "revision": "768c23c93af0291a0fd21cd4bffa4282",
-    "url": "/data/movie/cn-28.json"
-  },
-  {
     "revision": "13c928c444e3f4ac4158372745e66c4f",
     "url": "/data/movie/cn-27.json"
+  },
+  {
+    "revision": "768c23c93af0291a0fd21cd4bffa4282",
+    "url": "/data/movie/cn-28.json"
   },
   {
     "revision": "6cc5db06e8b09477e54a86f029220a6b",
@@ -13464,12 +13464,12 @@ self.__precacheManifest = [
     "url": "/data/movie/cn-9.json"
   },
   {
-    "revision": "88d2f4197066983ec508ad4395b3a5ee",
-    "url": "/data/movie/d4c7dd786440c3ff5ecbb7db0579f2d5/item.json"
-  },
-  {
     "revision": "da9a4cb4011ec9809cd89219033663f3",
     "url": "/data/movie/d4d33e7a1f0f426d8182b9e3631bdee1/item.json"
+  },
+  {
+    "revision": "88d2f4197066983ec508ad4395b3a5ee",
+    "url": "/data/movie/d4c7dd786440c3ff5ecbb7db0579f2d5/item.json"
   },
   {
     "revision": "998dd8d33180d788766cf7b85ab57f67",
@@ -14148,12 +14148,12 @@ self.__precacheManifest = [
     "url": "/data/movie/e2ebd31f8832cfa63e01d6f6311eeeba/item.json"
   },
   {
-    "revision": "cdfdef62d74be4326f31e242fa7abfb3",
-    "url": "/data/movie/e30546e6e5be7a30ed7cbc2bfef56a6a/item.json"
-  },
-  {
     "revision": "52d6d28431be7db2abbf0f3f67bb0640",
     "url": "/data/movie/e3044ee348c4ba9d562207b512bd3aca/item.json"
+  },
+  {
+    "revision": "cdfdef62d74be4326f31e242fa7abfb3",
+    "url": "/data/movie/e30546e6e5be7a30ed7cbc2bfef56a6a/item.json"
   },
   {
     "revision": "e8c0a99ddcaa462c4fc740d8cb7eca28",
@@ -14728,16 +14728,16 @@ self.__precacheManifest = [
     "url": "/data/movie/ed35c21e7888853d957317ca6872bffb/item.json"
   },
   {
+    "revision": "815e8bd2ce2219879334dcb2b76c24c8",
+    "url": "/data/movie/ed3afc42ec1b9231f158ce4539903d3b/item.json"
+  },
+  {
     "revision": "912dfd1dc293f768887996ce3d9eb661",
     "url": "/data/movie/ed4a00fe41267bdfd3f8d7f101800325/item.json"
   },
   {
     "revision": "93392687d4703d8287fb7cf8264d2bf9",
     "url": "/data/movie/ed4b02a3f5fa1c5d88864ae77c838558/item.json"
-  },
-  {
-    "revision": "815e8bd2ce2219879334dcb2b76c24c8",
-    "url": "/data/movie/ed3afc42ec1b9231f158ce4539903d3b/item.json"
   },
   {
     "revision": "7159ffc474a0849920f99d24b53d821a",
@@ -14896,12 +14896,12 @@ self.__precacheManifest = [
     "url": "/data/movie/efb53271676a00e434648ceb85baf1a4/item.json"
   },
   {
-    "revision": "d706be880fc2f3d030c5e3be03f7d032",
-    "url": "/data/movie/efd949ad34664543947bac1b3fa546a2/item.json"
-  },
-  {
     "revision": "fd10ff9a7de76bacf5561a840291de04",
     "url": "/data/movie/efdd1c1b5f5509d4ab27b860f1023fbe/item.json"
+  },
+  {
+    "revision": "d706be880fc2f3d030c5e3be03f7d032",
+    "url": "/data/movie/efd949ad34664543947bac1b3fa546a2/item.json"
   },
   {
     "revision": "066fc86eea341cb2d64cd88e4737fe57",
@@ -15196,7 +15196,7 @@ self.__precacheManifest = [
     "url": "/data/drama/011fafc6b178d076dae40d07c70b53f3/epi.json"
   },
   {
-    "revision": "63369b59173db468d168",
+    "revision": "9af2e3f275712b86632d",
     "url": "/css/movie.a1264114.css"
   },
   {
@@ -15880,12 +15880,12 @@ self.__precacheManifest = [
     "url": "/data/movie/jp-0.json"
   },
   {
-    "revision": "fa188aa2f47a4c33e1ad06017da9a1d6",
-    "url": "/data/movie/jp-3.json"
-  },
-  {
     "revision": "08e8d6db1c0e20318fda783af1336afe",
     "url": "/data/movie/jp-2.json"
+  },
+  {
+    "revision": "fa188aa2f47a4c33e1ad06017da9a1d6",
+    "url": "/data/movie/jp-3.json"
   },
   {
     "revision": "270b5216042227f7601944fd8b25c034",
@@ -15898,10 +15898,6 @@ self.__precacheManifest = [
   {
     "revision": "e349ecc5f64bb9a7cddb85db4aaabf87",
     "url": "/data/movie/jp-5.json"
-  },
-  {
-    "revision": "7aa2441017a0305f0ccfa2fe8a554f3f",
-    "url": "/data/movie/jp-6.json"
   },
   {
     "revision": "4abf7073f10a6abe1ea5a1aa554fa81c",
@@ -15918,6 +15914,10 @@ self.__precacheManifest = [
   {
     "revision": "69356251233c1b01975404f668641606",
     "url": "/data/movie/total.json"
+  },
+  {
+    "revision": "7aa2441017a0305f0ccfa2fe8a554f3f",
+    "url": "/data/movie/jp-6.json"
   },
   {
     "revision": "b922e724471084f339d6279767921d10",
@@ -16284,11 +16284,11 @@ self.__precacheManifest = [
     "url": "/css/enter.5dcc01f2.css"
   },
   {
-    "revision": "7e9801aeb4a653d4e22a",
+    "revision": "c8d09a7e67edf4f92c68",
     "url": "/css/drama.5dcc01f2.css"
   },
   {
-    "revision": "5b052b3654ef3ad9c2bf",
+    "revision": "a117c5790bae812951aa",
     "url": "/css/app.f7034f80.css"
   },
   {
