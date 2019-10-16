@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes"
+    />
+    <meta name="keywords" content="电视剧,娱乐节目,韩剧,韩国娱乐节目,电影" />
+    <meta name="description" content="每日更新最新高清韩剧和娱乐节目" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Hi123.site | 한국 TV 방송시간표</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .btns {
+        height: 30px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      button {
+        width: 80px;
+        height: 100%;
+        border: 1px solid;
+        border-radius: 3px;
+        color: #42b983;
+        background-color: #fff;
+        font-weight: 900;
+        cursor: pointer;
+        outline: none;
+      }
+
+      button.active {
+        background-color: #e6f6ee;
+        box-shadow: 0 0 3px #42b983;
+      }
+
+      button + button {
+        margin-left: 10px;
+      }
+
+      h3 {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        margin: 0;
+        font-size: 16px;
+      }
+
+      h3 a,
+      h3 a:visited {
+        color: #42b983;
+      }
+
+      .e,
+      .d {
+        display: none;
+        width: 100vw;
+        height: calc(100vh - 51px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btns">
+      <button value="e">예능</button><button value="d">드라마</button>
+      <h3><a href="http://hi123.site">www.hi123.site</a></h3>
+    </div>
+    <iframe
+      class="e"
+      frameborder="0"
+      src="/data/@table/table-enter.html"
+    ></iframe>
+    <iframe
+      class="d"
+      frameborder="0"
+      src="/data/@table/table-drama.html"
+    ></iframe>
+
+    <script>
+      var btns = Array.from(document.querySelectorAll("button"));
+      var e = document.querySelector(".e");
+      var d = document.querySelector(".d");
+
+      document.onclick = function(event) {
+        if (event.target.nodeName.toLowerCase() == "button") {
+          var t = event.target.value;
+
+          if (t == "e") {
+            e.style.display = "block";
+            d.style.display = "none";
+          } else {
+            d.style.display = "block";
+            e.style.display = "none";
+          }
+
+          btns.forEach(btn => {
+            btn.className = "";
+          });
+
+          event.target.className = "active";
+
+          window.scrollTo(0, 0);
+        }
+      };
+
+      btns[0].click();
+    </script>
+  </body>
+</html>
