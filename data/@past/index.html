@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <meta name="keywords" content="电视剧,娱乐节目,韩剧,韩国娱乐节目,电影" />
+    <meta name="description" content="每日更新最新高清韩剧和娱乐节目" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Hi123.site | 다시보기</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-family: malgun gothic, "맑은 고딕", Dotum, "돋움", Microsoft YaHei,
+          Helvetica, "Apple SD Gothic Neo", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      h3 i {
+        font-style: normal;
+        color: #42b983;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      label {
+        font-weight: 600;
+        margin-right: 8px;
+        color: #333;
+      }
+
+      .line-clamp {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+
+      .replay {
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .replay li {
+        position: relative;
+        display: flex;
+        height: 132px;
+        padding: 10px;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .replay li:hover {
+        border-color: #42b983;
+        background-color: #f0faf5;
+      }
+
+      .replay li + li {
+        margin-top: 15px;
+      }
+
+      .replay li .pic {
+        flex: 0 0 92.5px;
+        border: 1px solid #dee3eb;
+        margin-right: 10px;
+        background-color: #f2f2f2;
+        overflow: hidden;
+      }
+
+      .replay li .pic img {
+        width: 100%;
+      }
+
+      .replay li .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 104.5px);
+        padding: 10px 0;
+      }
+
+      .replay li .info p {
+        margin: 0;
+      }
+
+      .replay .title {
+        font-weight: 700;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ededed;
+      }
+
+      .replay .actor,
+      .replay .director {
+        font-size: 12px;
+        color: #898d9d;
+      }
+
+      .replay .total {
+        font-size: 12px;
+        font-weight: 700;
+        color: #42b983;
+      }
+
+      .replay .year {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        padding: 5px 8px;
+        line-height: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #42b983;
+        color: #fff;
+      }
+
+      .replay .index {
+        position: absolute;
+        bottom: 10px;
+        right: 19px;
+        width: 25px;
+        height: 25px;
+        line-height: 23px;
+        border: 1px solid #42b983;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #42b983;
+        color: #fff;
+        text-align: center;
+      }
+
+      .replay .pic:hover,
+      .replay .title:hover {
+        cursor: pointer;
+      }
+
+      .replay .title:hover {
+        text-decoration: underline;
+      }
+
+      .player {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -1px 0 2px #42b983;
+        transform: translate(101%, 0);
+        transition: transform 120ms ease-in-out;
+      }
+
+      .player .video {
+        height: 40%;
+        background-color: #222;
+      }
+
+      .player .detail {
+        height: calc(60% - 10px);
+        margin-top: 10px;
+        overflow: auto;
+      }
+
+      .player .info {
+        position: relative;
+        display: flex;
+        height: 80px;
+        padding: 10px 10px 20px;
+      }
+
+      .player .info img {
+        height: 100%;
+        border: 1px solid #e5e5e5;
+        margin-right: 10px;
+      }
+
+      .player .info p {
+        margin: 0;
+      }
+
+      .player .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 0;
+        font-size: 12px;
+        color: #898d9d;
+      }
+
+      .player .title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .player .year {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        line-height: 10px;
+        padding: 5px 8px;
+        border-radius: 10px;
+        background-color: #e5e5e5;
+      }
+
+      .player .episodes {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 10px 10px;
+        border-top: 1px solid #42b983;
+        background-color: #f0faf5;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .player .episodes::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        content: attr(data-total);
+        line-height: 10px;
+        padding: 5px 8px;
+        font-size: 12px;
+        background-color: #42b983;
+        color: #fff;
+        transform: translateX(-50%);
+      }
+
+      .player .episodes li {
+        font-size: 13px;
+        padding: 10px 15px;
+        color: #42b983;
+        cursor: pointer;
+      }
+
+      .player .episodes li.active {
+        font-weight: 700;
+        border: 1px solid;
+        border-radius: 20px;
+      }
+
+      .player .episodes li:hover {
+        text-decoration: underline;
+      }
+
+      .back {
+        position: absolute;
+        width: 32px;
+        padding: 10px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        font-size: 12px;
+        background-color: #42b983;
+        color: #fff;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="replay"></div>
+    <div class="player">
+      <a class="back" onclick="handleBack()">뒤로</a>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="100%"
+          src=""
+          frameborder="0"
+          allowfullscreen="true"
+          border="0"
+          marginwidth="0"
+          marginheight="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div class="detail">
+        <div class="info"></div>
+        <ul class="episodes"></ul>
+      </div>
+    </div>
+    <script>
+      (function(win, doc) {
+        const container = doc.querySelector(".replay");
+        const player = doc.querySelector(".player");
+        const video = player.querySelector("iframe");
+        const detail = doc.querySelector(".detail");
+        const info = detail.querySelector(".info");
+        const episodes = detail.querySelector(".episodes");
+
+        win
+          .fetch("past-top-drama.json")
+          .then(response => response.text())
+          .then(data => {
+            renderReplay(JSON.parse(data));
+          });
+
+        function renderReplay(data) {
+          let html = `<h3>방영종료 드라마 <i>TOP ${data.length}</i> 다시보기</h3><ul>`;
+
+          for (let i = 0; i < data.length; i++) {
+            let item = data[i];
+
+            html += `<li data-item=${encodeURI(JSON.stringify(item))}>
+                <span class="pic" onclick="handleClick(${i})"><img src="${
+              item.img
+            }" onerror="this.src = '/img/no-image.jpg'"></span>
+                <span class="info">
+                  <p class="title line-clamp" onclick="handleClick(${i})">${
+              item.title
+            }</p>
+                  <p class="actor line-clamp"><label>주연</label>${item.actor ||
+                    "- - -"}</p>
+                  <p class="director"><label>감독</label>${
+                    ["未知", ""].includes(item.director)
+                      ? "- - -"
+                      : item.director
+                  }</p>
+                  <p class="total">${item.episodes.length}부작</p>
+                  <p class="year">${item.year}</p>
+                </span>
+                <i class="index">${i + 1}</i>
+              </li>`;
+          }
+
+          container.innerHTML = html + "</ul>";
+        }
+
+        win.handleClick = function(index) {
+          beforeRender();
+
+          try {
+            renderPlayer(index);
+          } catch (ex) {
+            doc.body.style.overflow = "auto";
+            player.style.display = "none";
+
+            console.error(ex);
+          }
+        };
+
+        function beforeRender() {
+          player.style.height = doc.documentElement.clientHeight + "px";
+          video.setAttribute("src", "");
+          episodes.innerHTML = "";
+          player.style.display = "block";
+
+          doc.body.style.overflow = "hidden";
+          fixScroll(player, detail);
+        }
+
+        function renderPlayer(index) {
+          let html;
+          let item = JSON.parse(
+            decodeURI(
+              container.querySelector(`li:nth-child(${index + 1})`).dataset.item
+            )
+          );
+          let epiList = item.episodes;
+
+          epiList.sort((a, b) =>
+            parseInt(a.text.replace(/[^0-9]/gi, "")) >
+            parseInt(b.text.replace(/[^0-9]/gi, ""))
+              ? 1
+              : -1
+          ); // asc
+
+          video.setAttribute("src", epiList[0].src);
+
+          html = `<img src="${item.img}"/>
+            <span class="text">
+              <p class="title">${item.title}</p>
+              <p class="actor"><label>주연</label>${item.actor}</p>
+              <p class="director"><label>감독</label>${item.director}</p>
+              <p class="year">${item.year}</p>
+            </span>`;
+
+          info.innerHTML = html;
+
+          html = "";
+
+          for (let i = 0; i < epiList.length; i++) {
+            html += `<li onclick="handlePlay('${epiList[i].src}', ${i})">${epiList[i].text}</li>`;
+          }
+
+          episodes.setAttribute("data-total", `${epiList.length}부작`);
+          episodes.innerHTML = html;
+
+          setTimeout(function() {
+            player.style.transform = "translate(0, 0)";
+
+            setTimeout(function() {
+              container.style.display = "none";
+            }, 150);
+          });
+        }
+
+        win.handlePlay = function(epi, index) {
+          video.setAttribute("src", epi);
+
+          Array.from(episodes.querySelectorAll("li")).forEach((li, i) => {
+            if (i == index) {
+              li.className = "active";
+            } else {
+              li.classList = "";
+            }
+          });
+        };
+
+        win.handleBack = function() {
+          container.style.display = "block";
+
+          player.style.transform = "translate(101%, 0)";
+
+          setTimeout(function() {
+            doc.body.style.overflow = "auto";
+            player.style.display = "none";
+          }, 150);
+        };
+
+        function fixScroll(layer, layerBox) {
+          let targetY;
+
+          layer.style.display = "block";
+
+          layer.addEventListener(
+            "touchmove",
+            function(e) {
+              e.stopPropagation();
+              if (e.target == layer) e.preventDefault();
+            },
+            false
+          );
+
+          layerBox.addEventListener("touchstart", function(e) {
+            targetY = Math.floor(e.targetTouches[0].clientY);
+          });
+
+          layerBox.addEventListener(
+            "touchmove",
+            function(e) {
+              let newTargetY = Math.floor(e.targetTouches[0].clientY),
+                sTop = layerBox.scrollTop,
+                sH = layerBox.scrollHeight,
+                lyBoxH = layerBox.clientHeight;
+
+              if (sTop <= 0 && newTargetY - targetY > 0) {
+                e.preventDefault();
+              } else if (sTop >= sH - lyBoxH && newTargetY - targetY < 0) {
+                e.preventDefault();
+              }
+            },
+            false
+          );
+        }
+      })(window, document);
+    </script>
+  </body>
+</html>
