@@ -310,25 +310,27 @@
     </div>
     <script>
       (function(win, doc) {
-        const container = doc.querySelector(".replay");
-        const player = doc.querySelector(".player");
-        const video = player.querySelector("iframe");
-        const detail = doc.querySelector(".detail");
-        const info = detail.querySelector(".info");
-        const episodes = detail.querySelector(".episodes");
+        var container = doc.querySelector(".replay");
+        var player = doc.querySelector(".player");
+        var video = player.querySelector("iframe");
+        var detail = doc.querySelector(".detail");
+        var info = detail.querySelector(".info");
+        var episodes = detail.querySelector(".episodes");
 
         win
           .fetch("past-top-drama.json")
-          .then(response => response.text())
-          .then(data => {
+          .then(function(response) {
+            return response.text();
+          })
+          .then(function(data) {
             renderReplay(JSON.parse(data));
           });
 
         function renderReplay(data) {
-          let html = `<h3>방영종료 드라마 <i>TOP ${data.length}</i> 다시보기</h3><ul>`;
+          var html = `<h3>방영종료 드라마 <i>TOP ${data.length}</i> 다시보기</h3><ul>`;
 
-          for (let i = 0; i < data.length; i++) {
-            let item = data[i];
+          for (var i = 0; i < data.length; i++) {
+            var item = data[i];
 
             html += `<li data-item=${encodeURI(JSON.stringify(item))}>
                 <span class="pic" onclick="handleClick(${i})"><img src="${
@@ -379,20 +381,20 @@
         }
 
         function renderPlayer(index) {
-          let html;
-          let item = JSON.parse(
+          var html;
+          var item = JSON.parse(
             decodeURI(
               container.querySelector(`li:nth-child(${index + 1})`).dataset.item
             )
           );
-          let epiList = item.episodes;
+          var epiList = item.episodes;
 
-          epiList.sort((a, b) =>
+          epiList.sort(function(a, b) {
             parseInt(a.text.replace(/[^0-9]/gi, "")) >
             parseInt(b.text.replace(/[^0-9]/gi, ""))
               ? 1
-              : -1
-          ); // asc
+              : -1;
+          }); // asc
 
           video.setAttribute("src", epiList[0].src);
 
@@ -408,7 +410,7 @@
 
           html = "";
 
-          for (let i = 0; i < epiList.length; i++) {
+          for (var i = 0; i < epiList.length; i++) {
             html += `<li onclick="handlePlay('${epiList[i].src}', ${i})">${epiList[i].text}</li>`;
           }
 
@@ -427,7 +429,7 @@
         win.handlePlay = function(epi, index) {
           video.setAttribute("src", epi);
 
-          Array.from(episodes.querySelectorAll("li")).forEach((li, i) => {
+          Array.from(episodes.querySelectorAll("li")).forEach(function(li, i) {
             if (i == index) {
               li.className = "active";
             } else {
@@ -448,7 +450,7 @@
         };
 
         function fixScroll(layer, layerBox) {
-          let targetY;
+          var targetY;
 
           layer.style.display = "block";
 
@@ -468,7 +470,7 @@
           layerBox.addEventListener(
             "touchmove",
             function(e) {
-              let newTargetY = Math.floor(e.targetTouches[0].clientY),
+              var newTargetY = Math.floor(e.targetTouches[0].clientY),
                 sTop = layerBox.scrollTop,
                 sH = layerBox.scrollHeight,
                 lyBoxH = layerBox.clientHeight;
