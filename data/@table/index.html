@@ -63,8 +63,7 @@
       .e,
       .d {
         display: none;
-        width: 100vw;
-        height: calc(100vh - 51px);
+        width: 100%;
       }
     </style>
   </head>
@@ -73,21 +72,19 @@
       <button value="e">예능</button><button value="d">드라마</button>
       <h3><a href="http://hi123.site">www.hi123.site</a></h3>
     </div>
-    <iframe
-      class="e"
-      frameborder="0"
-      src="/data/@table/table-enter.html"
-    ></iframe>
-    <iframe
-      class="d"
-      frameborder="0"
-      src="/data/@table/table-drama.html"
-    ></iframe>
+    <iframe class="e" frameborder="0" src="table-enter.html"></iframe>
+    <iframe class="d" frameborder="0" src="table-drama.html"></iframe>
 
     <script>
-      var btns = Array.from(document.querySelectorAll("button"));
+      var btns = Array.prototype.slice.call(
+        document.querySelectorAll("button"),
+        0
+      );
       var e = document.querySelector(".e");
       var d = document.querySelector(".d");
+
+      e.style.height = d.style.height =
+        document.documentElement.clientHeight - 51 + "px";
 
       document.onclick = function(event) {
         if (event.target.nodeName.toLowerCase() == "button") {
@@ -101,7 +98,7 @@
             e.style.display = "none";
           }
 
-          btns.forEach(btn => {
+          btns.forEach(function(btn) {
             btn.className = "";
           });
 

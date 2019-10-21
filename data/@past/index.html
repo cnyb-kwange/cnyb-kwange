@@ -62,6 +62,8 @@
 
       .replay li {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 132px;
         padding: 10px;
@@ -79,7 +81,10 @@
       }
 
       .replay li .pic {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 92.5px;
         flex: 0 0 92.5px;
+        width: 92.5px;
         border: 1px solid #dee3eb;
         margin-right: 10px;
         background-color: #f2f2f2;
@@ -87,12 +92,19 @@
       }
 
       .replay li .pic img {
-        width: 100%;
+        width: inherit;
       }
 
       .replay li .info {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: calc(100% - 104.5px);
         padding: 10px 0;
@@ -184,6 +196,8 @@
 
       .player .info {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 80px;
         padding: 10px 10px 20px;
@@ -200,8 +214,15 @@
       }
 
       .player .text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 5px 0;
         font-size: 12px;
@@ -226,8 +247,13 @@
 
       .player .episodes {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 30px 10px 10px;
         border-top: 1px solid #42b983;
@@ -245,6 +271,7 @@
         font-size: 12px;
         background-color: #42b983;
         color: #fff;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
       }
 
@@ -316,41 +343,66 @@
         var info = detail.querySelector(".info");
         var episodes = detail.querySelector(".episodes");
 
-        win
-          .fetch("past-top-drama.json")
-          .then(function(response) {
-            return response.text();
-          })
-          .then(function(data) {
-            renderReplay(JSON.parse(data));
-          });
+        var xhr;
+
+        if (win.XMLHttpRequest) {
+          xhr = new XMLHttpRequest();
+        } else {
+          xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xhr.open("get", "past-top-drama.json", false);
+        xhr.send();
+
+        if (xhr.readyState == 4) {
+          if (xhr.status == 200) {
+            renderReplay(JSON.parse(xhr.responseText));
+          }
+        }
 
         function renderReplay(data) {
-          var html = `<h3>방영종료 드라마 <i>TOP ${data.length}</i> 다시보기</h3><ul>`;
+          var html =
+            "<h3>방영종료 드라마 <i>TOP " +
+            data.length +
+            "</i> 다시보기</h3><ul>";
 
           for (var i = 0; i < data.length; i++) {
             var item = data[i];
 
-            html += `<li data-item=${encodeURI(JSON.stringify(item))}>
-                <span class="pic" onclick="handleClick(${i})"><img src="${
-              item.img
-            }" onerror="this.src = '/img/no-image.jpg'"></span>
-                <span class="info">
-                  <p class="title line-clamp" onclick="handleClick(${i})">${
-              item.title
-            }</p>
-                  <p class="actor line-clamp"><label>주연</label>${item.actor ||
-                    "- - -"}</p>
-                  <p class="director"><label>감독</label>${
-                    ["未知", ""].includes(item.director)
-                      ? "- - -"
-                      : item.director
-                  }</p>
-                  <p class="total">${item.episodes.length}부작</p>
-                  <p class="year">${item.year}</p>
-                </span>
-                <i class="index">${i + 1}</i>
-              </li>`;
+            html +=
+              "<li data-item=" +
+              encodeURI(JSON.stringify(item)) +
+              ">" +
+              '<span class="pic" onclick="handleClick(' +
+              i +
+              ')"><img src="' +
+              item.img +
+              '" onerror="this.src = \'/img/no-image.jpg\'"></span>' +
+              '<span class="info">' +
+              '<p class="title line-clamp" onclick="handleClick(' +
+              i +
+              ')">' +
+              item.title +
+              "</p>" +
+              '<p class="actor line-clamp"><label>주연</label>' +
+              (item.actor || "- - -") +
+              "</p>" +
+              '<p class="director"><label>감독</label>' +
+              (item.director == "未知" || item.director == ""
+                ? "- - -"
+                : item.director) +
+              "</p>" +
+              '<p class="total">' +
+              item.episodes.length +
+              "부작</p>" +
+              '<p class="year">' +
+              item.year +
+              "</p>" +
+              "</span>" +
+              '<i class="index">' +
+              (i + 1) +
+              "</i>" +
+              "</li>";
           }
 
           container.innerHTML = html + "</ul>";
@@ -383,37 +435,56 @@
           var html;
           var item = JSON.parse(
             decodeURI(
-              container.querySelector(`li:nth-child(${index + 1})`).dataset.item
+              container.querySelector("li:nth-child(" + (index + 1) + ")")
+                .dataset.item
             )
           );
           var epiList = item.episodes;
 
           epiList.sort(function(a, b) {
-            parseInt(a.text.replace(/[^0-9]/gi, "")) >
-            parseInt(b.text.replace(/[^0-9]/gi, ""))
+            return parseInt(a.text.replace(/[^0-9]/gi, "")) >
+              parseInt(b.text.replace(/[^0-9]/gi, ""))
               ? 1
               : -1;
           }); // asc
 
           video.setAttribute("src", epiList[0].src);
 
-          html = `<img src="${item.img}"/>
-            <span class="text">
-              <p class="title">${item.title}</p>
-              <p class="actor"><label>주연</label>${item.actor}</p>
-              <p class="director"><label>감독</label>${item.director}</p>
-              <p class="year">${item.year}</p>
-            </span>`;
+          html =
+            '<img src="' +
+            item.img +
+            '"/>' +
+            '<span class="text">' +
+            '<p class="title">' +
+            item.title +
+            "</p>" +
+            '<p class="actor"><label>주연</label>' +
+            item.actor +
+            "</p>" +
+            '<p class="director"><label>감독</label>' +
+            item.director +
+            "</p>" +
+            '<p class="year">' +
+            item.year +
+            "</p>" +
+            "</span>";
 
           info.innerHTML = html;
 
           html = "";
 
           for (var i = 0; i < epiList.length; i++) {
-            html += `<li onclick="handlePlay('${epiList[i].src}', ${i})">${epiList[i].text}</li>`;
+            html +=
+              "<li onclick=\"handlePlay('" +
+              epiList[i].src +
+              "'," +
+              i +
+              ')">' +
+              epiList[i].text +
+              "</li>";
           }
 
-          episodes.setAttribute("data-total", `${epiList.length}부작`);
+          episodes.setAttribute("data-total", epiList.length + "부작");
           episodes.innerHTML = html;
 
           setTimeout(function() {
