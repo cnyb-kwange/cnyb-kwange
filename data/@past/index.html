@@ -207,6 +207,7 @@
       }
 
       .player .info img {
+        min-width: 57px;
         height: 100%;
         border: 1px solid #e5e5e5;
         margin-right: 10px;
@@ -457,7 +458,7 @@
           html =
             '<img src="' +
             item.img +
-            '"/>' +
+            '" onerror="this.src = \'/img/no-image.jpg\'">' +
             '<span class="text">' +
             '<p class="title">' +
             item.title +
