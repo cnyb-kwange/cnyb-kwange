@@ -50,6 +50,79 @@
         color: #333;
       }
 
+      .skeleton-title {
+        width: 430px;
+        height: 25px;
+        margin: 0 auto 1em;
+        background-color: #efefef;
+      }
+
+      .skeleton-item {
+        height: 132px;
+        padding: 10px;
+        border: 1px solid #f2f2f2;
+      }
+
+      .skeleton-item + .skeleton-item {
+        margin-top: 15px;
+      }
+
+      .skeleton-pic {
+        float: left;
+        width: 92.5px;
+        height: 132px;
+        background-color: #efefef;
+      }
+
+      .skeleton-info {
+        position: relative;
+        display: inline-block;
+        width: calc(100% - 102.5px);
+        padding: 10px 0;
+        margin-left: 10px;
+      }
+
+      .skeleton-info p {
+        height: 16px;
+        background-color: #efefef;
+        margin: 0 0 13px;
+      }
+
+      .skeleton-info p:nth-child(1) {
+        width: 50%;
+        height: 27px;
+        margin-bottom: 10px;
+      }
+
+      .skeleton-info p:nth-child(3) {
+        width: 100px;
+      }
+
+      .skeleton-info p:nth-child(4) {
+        width: 60px;
+        margin-bottom: 0;
+      }
+
+      .skeleton-info .y {
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: 44px;
+        height: 20px;
+        margin-bottom: 0;
+        background-color: #f2f2f2;
+      }
+
+      .skeleton-info .i {
+        position: absolute;
+        bottom: 0;
+        right: 9px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+      }
+
       .line-clamp {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -318,7 +391,66 @@
     </style>
   </head>
   <body>
-    <div class="replay"></div>
+    <div class="replay">
+      <div class="skeleton">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-item">
+          <span class="skeleton-pic"></span>
+          <span class="skeleton-info">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <i class="y"></i>
+            <i class="i"></i>
+          </span>
+        </div>
+        <div class="skeleton-item">
+          <span class="skeleton-pic"></span>
+          <span class="skeleton-info">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <i class="y"></i>
+            <i class="i"></i>
+          </span>
+        </div>
+        <div class="skeleton-item">
+          <span class="skeleton-pic"></span>
+          <span class="skeleton-info">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <i class="y"></i>
+            <i class="i"></i>
+          </span>
+        </div>
+        <div class="skeleton-item">
+          <span class="skeleton-pic"></span>
+          <span class="skeleton-info">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <i class="y"></i>
+            <i class="i"></i>
+          </span>
+        </div>
+        <div class="skeleton-item">
+          <span class="skeleton-pic"></span>
+          <span class="skeleton-info">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <i class="y"></i>
+            <i class="i"></i>
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="player">
       <a class="back" onclick="handleBack()">뒤로</a>
       <div class="video">
