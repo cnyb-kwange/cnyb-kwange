@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.930a268f0d1e2671a91776d30bead072.js"
+  "/precache-manifest.b5afe28c89bce5ebbdb0a3f19139c6c4.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "crawler-client"});
